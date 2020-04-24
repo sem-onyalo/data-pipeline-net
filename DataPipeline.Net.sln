@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataPipeline.Net.Web", "DataPipeline.Net.Web\DataPipeline.Net.Web.csproj", "{D3C30D30-A28F-466C-9E07-A97F63E475EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataPipeline.Net.Web", "DataPipeline.Net.Web\DataPipeline.Net.Web.csproj", "{D3C30D30-A28F-466C-9E07-A97F63E475EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataPipeline.Net.Api", "DataPipeline.Net.Api\DataPipeline.Net.Api.csproj", "{FB24DBD4-9296-46CE-90FA-27297E8A4417}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataPipeline.Net.Api", "DataPipeline.Net.Api\DataPipeline.Net.Api.csproj", "{FB24DBD4-9296-46CE-90FA-27297E8A4417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataPipeline.Net.Core", "DataPipeline.Net.Core\DataPipeline.Net.Core.csproj", "{78215685-FDCB-4AAB-BBA1-F0385394129D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FB24DBD4-9296-46CE-90FA-27297E8A4417}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB24DBD4-9296-46CE-90FA-27297E8A4417}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB24DBD4-9296-46CE-90FA-27297E8A4417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78215685-FDCB-4AAB-BBA1-F0385394129D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78215685-FDCB-4AAB-BBA1-F0385394129D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78215685-FDCB-4AAB-BBA1-F0385394129D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78215685-FDCB-4AAB-BBA1-F0385394129D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

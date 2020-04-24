@@ -36,6 +36,8 @@ namespace DataPipeline.Net.Api
                 });
             });
 
+            services.AddMemoryCache();
+
             services.AddControllers();
         }
 
