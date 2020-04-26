@@ -72,6 +72,11 @@ body {
 
 /* Mine
 -------------------------------------------------- */
-.data-pipeline-btns {
-    padding-bottom: 10px;
+.data-pipeline-btns, 
+.test-result-info {
+    padding-top: 10px;
+}
+
+.test-result-text {
+    padding-left: 10px;
 }

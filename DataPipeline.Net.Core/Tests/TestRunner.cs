@@ -29,14 +29,16 @@ namespace DataPipeline.Net.Core.Tests
 
             _testsFailed = 0;
 
-            using (AssemblyRunner runner = AssemblyRunner.WithoutAppDomain(_assemblyFileName))
             using (finished = new ManualResetEvent(false))
+            using (AssemblyRunner runner = AssemblyRunner.WithoutAppDomain(_assemblyFileName))
             {
                 runner.OnExecutionComplete = TestAssemblyExecutionFinished;
 
                 runner.Start();
 
                 finished.WaitOne();
+
+                while (runner.Status != AssemblyRunnerStatus.Idle) Thread.Sleep(500);
             }
 
             TestResult result = new TestResult { TotalTests = _totalTests, TestsFailed = _testsFailed };

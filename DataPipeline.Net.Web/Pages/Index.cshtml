@@ -4,8 +4,20 @@
     ViewData["Title"] = "Home page";
 }
 
-    <div class="data-pipeline-btns">
-        <button id="data-pipeline-run" type="button" class="btn btn-primary">Run Data Pipeline</button>
+<div class="row">
+    <div class="col-8">
+        <h5>Data Pipeline Runs</h5>
+        <div id="data-pipeline-progress" class="progress"></div>
+        <div class="data-pipeline-btns">
+            <button id="data-pipeline-run" type="button" class="btn btn-primary btn-sm">New Run</button>
+        </div>
     </div>
-    
-    <div id="data-pipeline-progress" class="progress"></div>
+    <div class="col">
+        <h5>Development Tests</h5>
+        <div id="test-result-progress" class="progress"></div>
+        <div class="test-result-info">
+            <button id="test-run" type="button" class="btn btn-primary btn-sm">Run Tests</button>
+            <span class="test-result-text"></span>
+        </div>
+    </div>
+</div>
